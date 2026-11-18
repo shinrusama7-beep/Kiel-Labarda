@@ -1,0 +1,159 @@
+print("**********************************************************")
+print("                                                            ")
+print("                 WELCOME TO PYTHON WORLD!                  ")
+print("                                                            ")
+print("             LEARN • CODE • PRACTICE • EXPLORE              ")
+print("                                                            ")
+print("**********************************************************")
+
+print("\n<< 📚 PRELIM EXAM COVERAGE >>")
+print("1. Introduction")
+print("2. What is Programming")
+print("3. Python Print Syntax")
+print("4. Python Comment")
+print("5. Variables and Data Types")
+print("6. Arithmetic Operators")
+
+print("<< 📝 MIDTERM LESSONS >>")
+print("7. Input Function")
+print("8. F-String")
+print("9. Conditional Statement\n")
+
+print("<< 📝 FINAL LESSON >>")
+print("10. Looping")
+
+print("\n0. Exit")
+print("============================================================")
+
+choice = input("Enter your choice (0-10): ")
+
+if choice == "1":
+    print("\n -Introduction ")
+    print("Python is a high-level, general-purpose programming language created by Guido van Rossum in 1991.")
+    print("It emphasizes readability and uses indentation to define code blocks.")
+    answer = input("\nQuiz: In what year was Python first released? \nAnswer: ")
+    if "1991" in answer:
+        print("✅ Correct!")
+    else:
+        print("❌ Incorrect. The answer is 1991.")
+
+elif choice == "2":
+    print("\n -What is Programming? ")
+    print("Programming is the process of writing instructions for a \ncomputer to perform specific tasks.")
+    print("It allows us to create software, applications, and systems \nthat make computers useful.")
+    answer = input("\nQuiz: What do you call a mistake in a program that stops it from running correctly? \nAnswer:")
+    if "program" in answer or "Error (Bug)" in answer:
+        print("✅ Correct!")
+    else:
+        print("❌ Incorrect. The answer is 'Error (Bug)'.")
+
+elif choice == "3":
+    print("\n -Python Print Syntax ")
+    print("The print() function is used to display text or variables on the screen.")
+    print("Example: print('Hello, Kiel!') Output = Hello, Kiel!")
+    answer = input("\nQuiz: Which Python function can you use to show messages on the screen?3 \nAnswer:")
+    if "print" in answer:
+        print("✅ Correct!")
+    else:
+        print("❌ Incorrect. The answer is 'print()'.")
+
+elif choice == "4":
+    print("\n -Python Comment ")
+    print(
+        "We have two different type of comment, for single line comment we use (#).For multiple line comment we use triple quotes (' ' ' )")
+    print(
+        "Comment lines are not read by the program, the comment it serves as guide or notes within your code to make it's more readable.")
+    print("Example: #PYTHON INTERACTIVE TUTORIAL")
+    answer = input("\nQuiz: Which symbol do you use to start a comment in Python? \nAnswer:")
+    if answer == "#":
+        print("✅ Correct!")
+    else:
+        print("❌ Incorrect. The correct answer is '#'.")
+
+elif choice == "5":
+    print("\n -Variables and Data Types ")
+    print("Variables is like a container of data, it's hold name of a data.")
+    print("Example: age = 18  # Integer")
+    print("Example: name = 'Kiel' # String")
+    answer = input("\nQuiz: What data type is used to store text in Python?  \nAnswer:")
+    if answer == 'String':
+        print("✅ Correct!")
+    else:
+        print("❌ Incorrect. The correct answer is 'String' ")
+
+elif choice == "6":
+    print("\n -Arithmetic Operators ")
+    print(
+        "Arithmetic opperators are symbol to perform mathematic calculation, (+) for addition, (-) for subtraction, () for multiplication, (/) for division, (%) for modulus, (*) for exponential.")
+    print("Example:   5 * 10 = 100")
+
+    answer = int(input("Quiz:  What is the result of 7 + 3 * 2 in Python (considering operator precedence)? \nAnswer:"))
+
+    if answer == 13:
+        print("✅ Correct!")
+    else:
+        print("❌ Incorrect. The correct answer is 13.")
+
+elif choice == "7":
+    print("\n -Input Function ")
+    print("It allows user to input using the input([prompt]) function.")
+    print("Example: name = input('Enter your name: ')")
+    print("Input for integers or number, example: int(input([prompt]))")
+    answer = input("\nQuiz: How do you convert a user input into a number in Python? \nAnswer:")
+    if "input" in answer:
+        print("✅ Correct!")
+    else:
+        print("❌ Incorrect. The correct answer is 'input()'.")
+
+elif choice == "8":
+    print("\n -F-String ")
+    print(
+        "F-strings, or formatted string literals, are a feature introduced in Python 3.6 that provide a concise and readable way to embed expressions and variables directly within string literals.")
+    print("Example:")
+    print("name = 'Kiel co'")
+    print("print(f'Hello, {name}!')  # Output: Hello, Kiel co!")
+    answer = input("\nQuiz: What syntax lets you include variable values inside a string easily? \nAnswer: ")
+    if answer == "f-string":
+        print("✅ Correct!")
+    else:
+        print("❌ Incorrect. The correct answer is 'f-string'.")
+
+elif choice == "9":
+    print("\n -Conditional Statements ")
+    print(
+        "Conditional statements in Python allow for decision-making within programs, enabling different code blocks to execute based on whether specified conditions are true or false. The primary keywords used for conditional statements are if, elif, and else. ")
+    print("Example:")
+    print("if age >= 18:")
+    print("    print('Adult')")
+    print("else:")
+    print("    print('Minor')")
+    answer = input("\nQuiz: How do you write an alternative condition after an if statement? \nAnswer:")
+    if answer == "elif":
+        print("✅ Correct!")
+    else:
+        print("❌ Incorrect. The correct answer is 'elif'.")
+
+elif choice == "10":
+    print("\n -Looping ")
+    print("Loops repeat actions multiple times.")
+    print("Example: for i in range(5): print(i)")
+    print("Note: range() has three parameters — start, stop, and step.")
+
+    print("Example:")
+    print("count = 1")
+    print("while count <= 5:")
+    print("      print('Count':, count)")
+    print("     count += 1")
+
+    answer = input("\nQuiz: Which keyword is used for repeating code while a condition is true? \nAnswer:")
+
+    if answer == "while":
+        print("✅ Correct!")
+    else:
+        print("❌ Incorrect. The correct answer is 'while'.")
+
+elif choice == "0":
+    print("\nExiting tutorial. have a good day, sir!")
+
+else:
+    print("\nInvalid choice! Please enter a number between 0 and 10.")
